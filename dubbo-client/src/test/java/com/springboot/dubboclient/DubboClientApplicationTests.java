@@ -21,10 +21,9 @@ public class DubboClientApplicationTests {
     }
 
     @Test
-    public void getTest(){
-
+    public void getTest() {
         User user = controller.get();
-        System.out.println(user.getName()+"\t"+user.getAge()+"\t"+user.getAddress());
+        System.out.println(user.toString());
 
     }
 }
